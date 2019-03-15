@@ -1,0 +1,7 @@
+{
+	"transform": "babel-jest",
+	"moduleDirectories": ["node_modules", "src"],
+	"moduleFileExtensions": ["js", "jsx"],
+	"setupFiles": ["<rootDir>/src/client/setupTests.js"],
+	"verbose": true
+}
