@@ -1,5 +1,7 @@
 [ignore]
-<PROJECT_ROOT>/src/.*
+.*/node_modules/.*
+.*/dist/.*
+.*/src/client/tests/*
 [include]
 
 [libs]

@@ -1,22 +1,20 @@
 // @flow
-import React, { useState, memo, Node } from 'react';
+import React, { useState } from 'react';
 
-export default memo(
-	(): Node => {
-		const [count, setCount] = useState(0);
+export default (): React.Node => {
+	const [count, setCount] = useState(0);
 
-		const makeIncrementer = (amount: number): void => setCount(count + amount);
+	const makeIncrementer = (amount: number): void => setCount(count + amount);
 
-		return (
-			<div>
-				<p>Current count : {count}</p>
-				<button className="increment" onClick={() => makeIncrementer(1)}>
-					Increment count
-				</button>
-				<button className="decrement" onClick={() => makeIncrementer(-1)}>
-					Decrement count
-				</button>
-			</div>
-		);
-	}
-);
+	return (
+		<div>
+			<p>Current count : {count}</p>
+			<button className="increment" onClick={() => makeIncrementer(1)}>
+				Increment count
+			</button>
+			<button className="decrement" onClick={() => makeIncrementer(-1)}>
+				Decrement count
+			</button>
+		</div>
+	);
+};

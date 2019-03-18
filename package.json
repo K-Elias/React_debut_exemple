@@ -1,22 +1,23 @@
 {
-    "name": "router_auth",
+    "name": "project_debut",
     "version": "1.0.0",
     "main": "index.js",
-    "repository": "https://gitlab.com/Makoto7/router_auth.git",
+    "repository": "https://gitlab.com/Makoto7/react_debut.git",
     "author": "Elias <elias.aboussair@outlook.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "parcel src/public/index.html --open",
-        "build": "parcel build src/public/index.html",
+        "dev": "next",
+        "build": "next build",
         "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
         "lint:fix": "eslint . --ext .js --ext .jsx --ignore-path .gitignore --fix",
-        "flow": "flow status",
+        "flow": "flow check ./src",
         "test:unit": "jest --config ./jest.config.json"
     },
     "dependencies": {
         "enzyme": "^3.8.0",
         "enzyme-adapter-react-16": "^1.8.0",
-        "jest": "^24.0.0",
+        "jest": "24.0.0",
+        "next": "^8.0.3",
         "react": "^16.8.4",
         "react-dom": "^16.8.4",
         "react-router-dom": "^4.3.1"
