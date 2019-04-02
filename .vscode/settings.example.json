@@ -1,20 +1,26 @@
 {
   "liveServer.settings.donotShowInfoMsg": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Noctis Azureus",
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false
   },
   "eslint.autoFixOnSave": true,
   "eslint.alwaysShowStatus": true,
-  "editor.fontSize": 17,
-  "editor.fontWeight": "500",
   "javascript.validate.enable": false,
   "breadcrumbs.enabled": true,
   "eslint.provideLintTask": true,
-  "vscode_custom_css.imports": [
-    "/Volumes/Macintosh HD/Users/wesbos/.vscodestyles.css"
-  ],
-  "editor.tabSize": 2,
+  "editor.fontFamily": "Menlo, 'monospace', monospace, 'Droid Sans Fallback'",
+  "npm.packageManager": "yarn",
+  "less.lint.duplicateProperties": "error",
+  "scss.lint.duplicateProperties": "error",
+  "scss.lint.float": "error",
+  "css.lint.emptyRules": "error",
+  "css.lint.unknownAtRules": "error",
+  "editor.fontSize": 17,
   "editor.detectIndentation": true
 }
