@@ -1,5 +1,9 @@
 {
-    "extends": ["airbnb", "prettier", "prettier/react"],
+    "extends": [
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
     "env": {
         "es6": true,
         "browser": true,
@@ -19,9 +23,15 @@
         }
     },
     "rules": {
-        "react/jsx-filename-extension": [1, {
-            "extensions": [".js", ".jsx"]
-        }],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
         "jsx-a11y/label-has-for": 0,
         "jsx-a11y/label-has-associated-control": 0,
         "comma-dangle": 0,
@@ -34,20 +44,28 @@
                 "jsxSingleQuote": false
             }
         ],
-        "no-multiple-empty-lines": ["error", {
-            "max": 1,
-            "maxBOF": 0,
-            "maxEOF": 1
-        }],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxBOF": 0,
+                "maxEOF": 1
+            }
+        ],
         "react/jsx-uses-vars": 2,
         "react/button-has-type": 0,
-        "indent": ["error", "tab"],
+        "indent": [
+            "error",
+            "tab"
+        ],
         "no-use-before-define": 0
     },
     "plugins": [
         "react",
         "jsx-a11y",
         "import",
-        "prettier"
+        "prettier",
+        "flowtype",
+        "react-hooks"
     ]
 }

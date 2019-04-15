@@ -6,5 +6,5 @@ import Routes from './router';
 const app = document.getElementById('app');
 
 if (app !== null) {
-  render(<Routes />, app);
+	render(<Routes />, app);
 }
