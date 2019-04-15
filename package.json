@@ -1,5 +1,5 @@
 {
-    "name": "project_debut",
+    "name": "react_debut",
     "version": "1.0.0",
     "main": "index.js",
     "repository": "https://gitlab.com/Makoto7/react_debut.git",
@@ -10,7 +10,8 @@
         "build": "parcel build src/public/index.html",
         "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
         "lint:fix": "eslint . --ext .js --ext .jsx --ignore-path .gitignore --fix",
-        "flow": "flow check ./src",
+        "flow": "flow",
+        "flow-type": "flow-typed install",
         "test:unit": "jest --config ./jest.config.json"
     },
     "dependencies": {
@@ -20,6 +21,7 @@
         "jest": "^24.0.0",
         "react": "^16.8.4",
         "react-dom": "^16.8.4",
+        "react-router": "^5.0.0",
         "react-router-dom": "^4.3.1"
     },
     "devDependencies": {
@@ -39,7 +41,8 @@
         "eslint-plugin-jsx-a11y": "^6.1.2",
         "eslint-plugin-prettier": "^3.0.1",
         "eslint-plugin-react": "^7.12.4",
-        "flow-bin": "^0.91.0",
+        "flow-bin": "^0.97.0",
+        "flow-typed": "^2.5.1",
         "parcel-bundler": "^1.12.3",
         "prettier": "^1.16.1"
     }

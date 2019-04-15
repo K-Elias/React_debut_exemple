@@ -1,10 +1,10 @@
 // @flow
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Counter from '../Counter';
+import { render } from 'react-dom';
+import Routes from './router';
 
-export default (): React.Node => (
-  <BrowserRouter>
-    <Route exact path="/" component={Counter} />
-  </BrowserRouter>
-);
+const app = document.getElementById('app');
+
+if (app !== null) {
+  render(<Routes />, app);
+}
