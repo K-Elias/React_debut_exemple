@@ -10,7 +10,7 @@
         "build": "parcel build src/public/index.html",
         "lint": "eslint . --ext .js --ext .jsx --ignore-path .gitignore",
         "lint:fix": "eslint . --ext .js --ext .jsx --ignore-path .gitignore --fix .",
-        "flow": "flow",
+        "flow": "flow check ./src",
         "flow-type": "flow-typed install",
         "test:unit": "jest --config ./jest.config.json"
     },

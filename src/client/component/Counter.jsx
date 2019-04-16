@@ -1,7 +1,8 @@
 // @flow
 import React, { useState } from 'react';
+import type { Node } from 'react';
 
-export default () => {
+export default (): Node => {
 	const [count, setCount] = useState(0);
 
 	const makeIncrementer = (amount: number): void => setCount(count + amount);
